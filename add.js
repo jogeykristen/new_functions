@@ -1,10 +1,10 @@
-function evenNumbers(numbers){
-    let sum =0;
-    for(x in numbers){
-        if(numbers[x]%2 == 0){
-            sum += numbers[x];
-        }
+function evenNumbers(numbers) {
+  let sum = 0;
+  for (x of numbers) {
+    if (x % 2 == 0) {
+      sum += x;
     }
-    return sum
+  }
+  return sum;
 }
-console.log(evenNumbers([4,5,6,7,8,9,20]))
+console.log(evenNumbers([4, 5, 6, 7, 8, 9, 20]));
